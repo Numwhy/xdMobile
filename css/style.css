@@ -1,0 +1,174 @@
+/** 清除样式 **/
+html,body,div,span,hr,h1,h2,h3,h4,h5,h6,p,pre,a,em,img,small,strong,sub,sup,b,dl,dt,dd,ol,ul,li,form,label,table,caption,tbody,tfoot,thead,tr,th,td,form,input,textarea{margin:0;padding:0;border:none;}
+*{-webkit-touch-callout:none;/** 禁止ios&android长按时下载图片 **/}
+/** 定义字体 **/
+body{
+    font-family:'Helvetica';
+}
+img{
+    margin:0 auto;
+    vertical-align:top;
+}
+ul li{list-style:none;}
+label{font-weight:normal;}
+/** wrap **/
+.wrap{
+    width:100%;
+    max-width:1024px;
+    min-width:320px;
+    position:relative;
+    overflow:hidden;
+}
+/** head **/
+.head{
+    background:url("../images/bg3.jpg") no-repeat;
+    background-size:100% 100%;
+    padding:0.2rem 0 0.5rem 0.1rem;
+}
+.head img:first-child{
+    margin:0;
+}
+/** contain **/
+.contain{
+    background:#f3f0eb;
+}
+.con,.con_question{
+    width:90%;
+    margin:0 auto;
+    position:relative;
+}
+.con_txt,.question{
+    width:94%;
+    margin:-1rem 0 -0.5rem 0.12rem;
+    padding:0.1rem 0.3rem 0;
+    border-left:0.03rem solid #3C2D2D;
+    border-right:0.03rem solid #3C2D2D;
+}
+.con_txt h1,.con_question h1{
+    font-size:0.35rem;
+}
+.con_txt p,.form_radio ul li{
+    font-size:0.2rem;
+    margin:0.1rem 0;
+    text-align:justify;
+}
+/** con_question **/
+.con_question h1{
+    border-bottom:0.05rem solid #3C2D2D;
+    padding:0.1rem 0;
+}
+.question{
+    border-bottom:0.03rem solid #3C2D2D;
+    border-radius:0.15rem;
+}
+.form_radio{
+    padding:0.1rem;
+}
+.form_radio p{
+    font-size:0.25rem;
+    padding:0.1rem 0;
+    border-bottom:0.02rem dashed #026603;
+    margin-bottom:0.1rem;
+}
+.form_radio input{
+    width:0.2rem;
+    height:0.2rem;
+    display:inline-block;
+    background:#4cae4c;
+}
+.question_tj{
+    width:3rem;
+    height:0.6rem;
+    margin:1rem 0 0 1.2rem;
+}
+/** 消息提示 **/
+.question_bg{
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.5);
+    position:fixed;
+    left:0;
+    top:0;
+}
+.question_ts,.question_gx,.question_cw{
+    background:#01561F;
+    border:0.05rem solid #fff;
+    -webkit-border-radius:0.1rem;
+    border-radius:0.1rem;
+    top:50%;
+}
+.question_ts,.question_gx,.question_cw{
+    width:60%;
+    color:#fff;
+    position:fixed;
+    left:50%;
+    margin-left:-1.8rem;
+    margin-top:-1rem;
+    padding-bottom:0.2rem;
+}
+.question_hb{
+    width:100%;
+    height:100%;
+    position:fixed;
+    left:0;
+    top:10%;
+    overflow-y:scroll;
+}
+.question_hb .question_del{
+    font-size:0.5rem;
+    color:#fff;
+}
+.question_hb ul{
+    width:60%;
+    margin:0 auto;
+}
+.question_gx p,.question_cw p{
+    margin:0.1rem 0 0.3rem 0;
+    font-size:0.3rem;
+}
+.question_del{
+    display:block;
+}
+.con_question>input,.question_ts p,.question_del,.question_dd,.question_cl{
+    font-size:0.2rem;
+}
+.con_question>input,.question_ts p,.question_del{
+    line-height:0.35rem;
+}
+.question_dd,.question_cl{
+    width:1.6rem;
+    height:0.43rem;
+}
+.question_hb ul li{
+    position:relative;
+}
+.question_hb_txt{
+    width:100%;
+    color:#ffd300;
+    position:absolute;
+    top:0.2rem;
+    overflow-y:scroll;
+}
+.question_hb_txt p{
+    font-size:0.1rem;
+    margin-top:-0.1rem;
+}
+.question_hb_txt span{
+    font-size:0.7rem;
+}
+.question_hb ul li a{
+    width:100%;
+    height:0.5rem;
+    position:absolute;
+    top:0;
+    display:block;
+}
+.question_hb ul li a input{
+    width:2rem;
+    color:#ff0000;!important;
+}
+.dis{display:none;}
+/** footer **/
+.footer{
+    margin-top:-1rem;
+}

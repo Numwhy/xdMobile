@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 窗口自动调整,禁止用户缩放 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <!-- 隐藏地址栏,仅针对ios的safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- 仅针对ios的safari顶端状态条的样式 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>信达证券</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        //移动端设置页面字体大小
+        new function () {
+            var _self = this;
+            _self.width = 640; // 设置默认最大宽度,参考设计图
+            _self.fontSize = 100; // 默认字体大小
+            _self.widthProportion = function () {
+                var p = (document.body && document.body.clientWidth || document.getElementsByTagName("html")[0].offsetWidth) / _self.width;
+                return p;
+            };
+            _self.changePage = function () {
+                document.getElementsByTagName("html")[0].setAttribute("style", "font-size:" + _self.widthProportion() * _self.fontSize + "px !important");
+            };
+            _self.changePage();
+            window.addEventListener('resize', function () {
+                _self.changePage();
+            }, false);
+        };
+    </script>
+</head>
+<body>
+    <div class="wrap">
+        <!-- head -->
+        <div class="head">
+            <div class="row">
+                <div class="col-xs-12">
+                    <img src="images/logo.png" class="img-responsive wow fadeIn" data-wow-duration="2s" />
+                    <img src="images/tzz.png" class="img-responsive wow fadeInDown" data-wow-duration="2s" />
+                </div>
+            </div>
+        </div>
+        <!-- contain -->
+        <div class="contain">
+            <!-- 活动规则 -->
+            <div class="con wow fadeInDown" data-wow-duration="2s">
+                <img src="images/bg1.png" width="100%" />
+                <div class="con_txt">
+                    <h1>活动规则:</h1>
+                    <p>活动时间:2017.4.18-2017.5.18</p>
+                    <p>活动期间凡关注公众号即可参与答题,三道题全部答对,即可领取<span>1.88元</span>的红包。如果参与者未答对,可重新参与,直到全部答对为止。</p>
+                    <p>注:每个人只有一次中奖机会。</p>
+                </div>
+                <img src="images/bg2.png" width="100%" />
+            </div>
+            <!-- 题目 -->
+            <div class="con_question">
+                <img src="images/bg1.png" width="100%" />
+                <div class="question">
+                    <h1>欢迎参加本次答题!</h1>
+                    <form action="#" method="get" autocomplete="off">
+                        <div class="form_radio wow fadeInDown" data-wow-duration="2s">
+                            <p>1.在证券经纪业务中证券经纪商对()不负保密义务?</p>
+                            <ul>
+                                <li>
+                                    <input type="radio" name="redio">
+                                    <label>A.客户买卖股票的原因和依据</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="redio">
+                                    <label>B.客户股东账户中的库存证券种类</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="redio">
+                                    <label>C.客户股东账户中的库存证券数</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="redio">
+                                    <label>D.客户资金账户中的资金余额</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="form_radio wow fadeInDown" data-wow-duration="2s">
+                            <p>2.在证券经纪业务中证券经纪商对()不负保密义务?</p>
+                            <ul>
+                                <li>
+                                    <input type="radio" name="redio2">
+                                    <label>A.客户买卖股票的原因和依据</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="redio2">
+                                    <label>B.客户股东账户中的库存证券种类</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="redio2">
+                                    <label>C.客户股东账户中的库存证券数</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="redio2">
+                                    <label>D.客户资金账户中的资金余额</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="form_radio wow fadeInDown" data-wow-duration="1s">
+                            <p>3.在证券经纪业务中证券经纪商对()不负保密义务?</p>
+                            <ul>
+                                <li>
+                                    <input type="radio" name="redio3">
+                                    <label>A.客户买卖股票的原因和依据</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="redio3">
+                                    <label>B.客户股东账户中的库存证券种类</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="redio3">
+                                    <label>C.客户股东账户中的库存证券数</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="redio3">
+                                    <label>D.客户资金账户中的资金余额</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="form_radio wow fadeInDown" data-wow-duration="1s">
+                            <p>4.在证券经纪业务中证券经纪商对()不负保密义务?</p>
+                            <ul>
+                                <li>
+                                    <input type="radio" name="redio4">
+                                    <label>A.客户买卖股票的原因和依据</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="redio4">
+                                    <label>B.客户股东账户中的库存证券种类</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="redio4">
+                                    <label>C.客户股东账户中的库存证券数</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="redio4">
+                                    <label>D.客户资金账户中的资金余额</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="form_radio wow fadeInDown" data-wow-duration="1s">
+                            <p>5.在证券经纪业务中证券经纪商对()不负保密义务?</p>
+                            <ul>
+                                <li>
+                                    <input type="radio" name="redio5">
+                                    <label>A.客户买卖股票的原因和依据</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="redio5">
+                                    <label>B.客户股东账户中的库存证券种类</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="redio5">
+                                    <label>C.客户股东账户中的库存证券数</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="redio5">
+                                    <label>D.客户资金账户中的资金余额</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </form>
+                    <div class="question_bg dis">
+                        <div class="question_ts dis">
+                            <input type="button" name="question_qd" class="btn btn-info question_qd" value="确定" />
+                        </div>
+                        <!-- 恭喜全部答对 -->
+                        <div class="question_gx text-center dis">
+                            <span class="question_del text-right">X</span>
+                            <p>恭喜，全部答对！</p>
+                            <input type="button" name="question_dd" class="btn btn-warning question_dd" value="点击领取红包" />
+                        </div>
+                        <!-- 答案错误 -->
+                        <div class="question_cw text-center dis">
+                            <span class="question_del text-right">X</span>
+                            <p>很抱歉，答案错误</p>
+                            <input type="reset" name="question_dd" class="btn btn-warning question_cl" value="重新答题" />
+                        </div>
+                        <!-- 红包 -->
+                        <div class="question_hb text-center dis">
+                            <span class="question_del text-right">X</span>
+                            <ul>
+                                <li><img src="images/hb1.png" width="100%" /></li>
+                                <li>
+                                    <img src="images/hb2.png" width="100%" />
+                                    <div class="question_hb_txt">
+                                        <span>1.88元</span>
+                                        <p>已存入零钱</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/hb3.png" width="100%" />
+                                    <a href="#" class="text-center"><input type="button" class="btn btn-warning" value="点击分享" /></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <input type="button" class="btn btn-success question_tj" value="提交" />
+            </div>
+        </div>
+        <!-- footer -->
+        <div class="footer">
+            <img src="images/bg5.jpg" width="100%">
+        </div>
+    </div>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/style.js"></script>
+<script src="js/wow.js"></script>
+<script>
+    new WOW().init();
+</script>
+</body>
+</html>
